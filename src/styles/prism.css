@@ -1,0 +1,102 @@
+.language-javascript {
+  color: white;
+}
+
+.token.tag,
+.token.class-name,
+.token.selector,
+.token.selector .class,
+.token.function {
+  --tw-text-opacity: 1;
+  color: rgb(232 121 249 / var(--tw-text-opacity));
+}
+
+.token.attr-name,
+.token.keyword,
+.token.rule,
+.token.operator,
+.token.pseudo-class,
+.token.important {
+  --tw-text-opacity: 1;
+  color: rgb(45 212 191 / var(--tw-text-opacity));
+}
+
+.token.attr-value,
+.token.class,
+.token.string,
+.token.number,
+.token.unit,
+.token.color {
+  --tw-text-opacity: 1;
+  color: rgb(190 242 100 / var(--tw-text-opacity));
+}
+
+.token.punctuation,
+.token.module,
+.token.property {
+  --tw-text-opacity: 1;
+  color: rgb(186 230 253 / var(--tw-text-opacity));
+}
+
+.token.atapply .token:not(.rule):not(.important) {
+  color: inherit;
+}
+
+.language-shell .token:not(.comment) {
+  color: inherit;
+}
+
+.language-css .token.function {
+  color: inherit;
+}
+
+.token.comment {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.token.deleted:not(.prefix) {
+  position: relative;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  display: block;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.token.deleted:not(.prefix)::after {
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  display: block;
+  background-color: rgb(251 113 133 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.25;
+}
+
+.token.deleted.prefix {
+  -webkit-user-select: none;
+          user-select: none;
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.token.inserted:not(.prefix) {
+  margin-left: -1rem;
+  margin-right: -1rem;
+  display: block;
+  background-color: rgb(4 120 87 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.5;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.token.inserted.prefix {
+  -webkit-user-select: none;
+          user-select: none;
+  color: rgb(167 243 208 / var(--tw-text-opacity));
+  --tw-text-opacity: 0.75;
+}
